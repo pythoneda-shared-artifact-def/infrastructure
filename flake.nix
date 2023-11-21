@@ -1,8 +1,8 @@
-# infrastructure/flake.nix
+# flake.nix
 #
 # This file packages pythoneda-shared-artifact/infrastructure as a Nix flake.
 #
-# Copyright (C) 2023-today rydnr's pythoneda-shared-artifact/infrastructure-artifact
+# Copyright (C) 2023-today rydnr's pythoneda-shared-artifact-def/infrastructure
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url = "github:pythoneda-shared-artifact/events-artifact/0.0.7?dir=events";
+      url = "github:pythoneda-shared-artifact-def/events/0.0.8";
     };
     pythoneda-shared-artifact-events-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -41,8 +41,7 @@
         "pythoneda-shared-pythoneda-domain";
       inputs.pythoneda-shared-pythoneda-infrastructure.follows =
         "pythoneda-shared-pythoneda-infrastructure";
-      url =
-        "github:pythoneda-shared-artifact/events-infrastructure-artifact/0.0.6?dir=events-infrastructure";
+      url = "github:pythoneda-shared-artifact-def/events-infrastructure/0.0.7";
     };
     pythoneda-shared-artifact-shared = {
       inputs.flake-utils.follows = "flake-utils";
@@ -53,20 +52,19 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url = "github:pythoneda-shared-artifact/shared-artifact/0.0.9?dir=shared";
+      url = "github:pythoneda-shared-artifact-def/shared/0.0.10";
     };
     pythoneda-shared-pythoneda-banner = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
-      url = "github:pythoneda-shared-pythoneda/banner/0.0.25";
+      url = "github:pythoneda-shared-pythoneda-def/banner/0.0.2";
     };
     pythoneda-shared-pythoneda-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
-      url =
-        "github:pythoneda-shared-pythoneda/domain-artifact/0.0.16?dir=domain";
+      url = "github:pythoneda-shared-pythoneda-def/domain/0.0.2";
     };
     pythoneda-shared-pythoneda-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -75,8 +73,7 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url =
-        "github:pythoneda-shared-pythoneda/infrastructure-artifact/0.0.8?dir=infrastructure";
+      url = "github:pythoneda-shared-pythoneda-def/infrastructure/0.0.1";
     };
   };
   outputs = inputs:
