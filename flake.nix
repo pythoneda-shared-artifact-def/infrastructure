@@ -52,7 +52,7 @@
         "pythoneda-shared-banner";
       inputs.pythoneda-shared-domain.follows =
         "pythoneda-shared-domain";
-      url = "github:pythoneda-shared-artifact-def/shared/0.0.42";
+      url = "github:pythoneda-shared-artifact-def/shared/0.0.43";
     };
     pythoneda-shared-banner = {
       inputs.flake-utils.follows = "flake-utils";
