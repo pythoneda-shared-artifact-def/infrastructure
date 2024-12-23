@@ -28,7 +28,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-artifact-def/events/0.0.80";
+      url = "github:pythoneda-shared-artifact-def/events/0.0.81";
     };
     pythoneda-shared-artifact-events-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -41,7 +41,7 @@
         "pythoneda-shared-pythonlang-domain";
       inputs.pythoneda-shared-pythonlang-infrastructure.follows =
         "pythoneda-shared-pythonlang-infrastructure";
-      url = "github:pythoneda-shared-artifact-def/events-infrastructure/0.0.70";
+      url = "github:pythoneda-shared-artifact-def/events-infrastructure/0.0.71";
     };
     pythoneda-shared-artifact-shared = {
       inputs.flake-utils.follows = "flake-utils";
@@ -52,7 +52,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-artifact-def/shared/0.0.90";
+      url = "github:pythoneda-shared-artifact-def/shared/0.0.91";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -64,7 +64,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.107";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.108";
     };
     pythoneda-shared-pythonlang-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -73,7 +73,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.82";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.83";
     };
   };
   outputs = inputs:
@@ -82,8 +82,8 @@
       let
         org = "pythoneda-shared-artifact";
         repo = "infrastructure";
-        version = "0.0.15";
-        sha256 = "1s1lcs9mml76139b0iyx7lvjh8l4gzk5a16v2gf6iy6k7wwkxl2p";
+        version = "0.0.16";
+        sha256 = "0ych72ccf4lnpp1k7r7ahzyr3f5kkqxpli12l5ay71y9xrjpiwbp";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.shared.artifact.infrastructure";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
